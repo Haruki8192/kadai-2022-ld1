@@ -1,85 +1,55 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>コンサルティング会社名</title>
-    <style>
-        /* ... 以前のスタイルは省略 ... */
-        .services {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 2rem;
-        }
-        .service-card {
-            flex: 1;
-            padding: 1rem;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-right: 1rem;
-        }
-        .contact-form {
-            margin-top: 2rem;
-        }
-        .contact-form label {
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            background-color: #0074D9;
-            color: #ffffff;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <title>Stylish Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- ... 以前のコードは省略 ... -->
-    <div class="container">
-        <h2>私たちのサービス</h2>
-        <div class="services">
-            <div class="service-card">
-                <h3>戦略コンサルティング</h3>
-                <p>ビジネス戦略の立案と実行支援</p>
+    <header>
+        <div class="container">
+            <h1>Stylish Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Our Stylish Website</h2>
+            <p>Experience the elegance and sophistication.</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="feature">
+                <h3>Responsive Design</h3>
+                <p>Our website looks stunning on all devices.</p>
             </div>
-            <div class="service-card">
-                <h3>プロジェクトマネジメント</h3>
-                <p>プロジェクトの計画、実行、監視</p>
+            <div class="feature">
+                <h3>Modern Layout</h3>
+                <p>Clean and sleek design that captivates your audience.</p>
             </div>
-            <div class="service-card">
-                <h3>デジタルトランスフォーメーション</h3>
-                <p>IT戦略とデジタル化の推進</p>
+            <div class="feature">
+                <h3>Interactive Elements</h3>
+                <p>Engage with your visitors through dynamic content.</p>
             </div>
         </div>
-        <div class="contact-form">
-            <h2>お問い合わせ</h2>
-            <form action="/submit" method="post">
-                <label for="name">お名前</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">メールアドレス</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">お問い合わせ内容</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <button type="submit">送信</button>
-            </form>
-    <div class="container">
-        <h2>私たちのサービス</h2>
-        <p>コンサルティング会社の特徴や提供するサービスをここに記載</p>
-        <!-- その他のコンテンツを追加 -->
-    </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 コンサルティング会社名</p>
+        <div class="container">
+            <p>&copy; 2024 Stylish Website. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
