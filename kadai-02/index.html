@@ -1,19 +1,85 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-    
-        <title>自己紹介</title>
-
-    </head>
-    <body>
-        <h1>見出し1</h1>
-        <p>自己紹介することもないので……</p>
-        <a href="https://kokushin-u.jp/contact/access/">aaaaa</a>
-        <h2>所属</h2>
-        <p>大学<img src="./eye_shirome_man.png" alt="楽しい"></p>
-        <ul>
-            <li>優しい</li>
-            <li>怖い</li>
-        </ul>
-    </body>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コンサルティング会社名</title>
+    <style>
+        /* ... 以前のスタイルは省略 ... */
+        .services {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        .service-card {
+            flex: 1;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 1rem;
+        }
+        .contact-form {
+            margin-top: 2rem;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #0074D9;
+            color: #ffffff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- ... 以前のコードは省略 ... -->
+    <div class="container">
+        <h2>私たちのサービス</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>戦略コンサルティング</h3>
+                <p>ビジネス戦略の立案と実行支援</p>
+            </div>
+            <div class="service-card">
+                <h3>プロジェクトマネジメント</h3>
+                <p>プロジェクトの計画、実行、監視</p>
+            </div>
+            <div class="service-card">
+                <h3>デジタルトランスフォーメーション</h3>
+                <p>IT戦略とデジタル化の推進</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>お問い合わせ</h2>
+            <form action="/submit" method="post">
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">お問い合わせ内容</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">送信</button>
+            </form>
+    <div class="container">
+        <h2>私たちのサービス</h2>
+        <p>コンサルティング会社の特徴や提供するサービスをここに記載</p>
+        <!-- その他のコンテンツを追加 -->
+    </div>
+    <footer>
+        <p>&copy; 2024 コンサルティング会社名</p>
+    </footer>
+</body>
 </html>
